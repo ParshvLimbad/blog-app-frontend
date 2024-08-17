@@ -36,36 +36,36 @@ const CreateBlog = () => {
         setTitle("");
         setContent("");
         setAuthor("");
-        navigate("/");
+        navigate("/your-blogs");
       });
   };
 
   return (
     <form
       onSubmit={handlePost}
-      className="flex flex-col p-7 h-[100vh] items-center bg-[#0E1113] px-24 py-6"
+      className="flex flex-col p-7 h-[100vh] items-center px-24 py-6"
     >
       <div className="flex flex-col w-[40rem] gap-4">
         <div className="flex flex-col w-full gap-2">
-          <lable className="text-xl text-[#FFFFFF]">Title</lable>
+          <lable className="text-xl">Title</lable>
           <input
-            className="rounded-xl p-2 outline-none border hover:border-purple-400 focus:border-purple-400 ease-in-out duration-300 border-[#3E4142] border-1 bg-[#0E1113] text-[#FFFFFF]"
+            className="rounded-xl p-2 outline-none border hover:border-purple-400 focus:border-purple-400 ease-in-out duration-300 border-1"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
           />
         </div>
         <div className="flex flex-col w-full gap-2">
-          <lable className="text-xl text-[#FFFFFF]">Content</lable>
+          <lable className="text-xl">Content</lable>
           <textarea
-            className="rounded-xl p-2 outline-none border hover:border-purple-400 focus:border-purple-400 ease-in-out duration-300 border-[#3E4142] border-1 h-[20rem] bg-[#0E1113] text-[#FFFFFF]"
+            className="rounded-xl p-2 outline-none border hover:border-purple-400 focus:border-purple-400 ease-in-out duration-300 border-1 h-[20rem]"
             value={content}
             onChange={(e) => setContent(e.target.value)}
           />
         </div>
         <div className="flex flex-col w-full gap-2">
-          <lable className="text-xl text-[#FFFFFF]">Author</lable>
+          <lable className="text-xl">Author</lable>
           <input
-            className="rounded-xl p-2 outline-none border hover:border-purple-400 focus:border-purple-400 ease-in-out duration-300 border-[#3E4142] border-1 bg-[#0E1113] text-[#FFFFFF]"
+            className="rounded-xl p-2 outline-none border hover:border-purple-400 focus:border-purple-400 ease-in-out duration-300 border-1"
             value={author}
             onChange={(e) => setAuthor(e.target.value)}
           />
