@@ -1,7 +1,19 @@
 import "./App.css";
+import CreateBlog from "./pages/CreateBlog";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Navbar from "./components/Navbar";
 
 function App() {
-  return <></>;
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/create" element={<CreateBlog />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
